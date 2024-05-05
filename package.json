@@ -16,7 +16,7 @@
     "typescript",
     "postgresql"
   ],
-  "author": "Your Name",
+  "author": "Bkr Cbc",
   "license": "MIT",
   "dependencies": {
     "@types/express": "^4.17.12",
