@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "PDF generator microservice with Node.js, TypeScript, and PostgreSQL",
   "main": "dist/index.js",
+  "type":"module",
   "scripts": {
     "start": "ts-node src/index.ts",
     "build": "tsc && mkdir -p dist && cp -r src/* dist/",
