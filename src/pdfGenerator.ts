@@ -6,10 +6,16 @@ export async function generatePDF(data: MyEntity): Promise<Uint8Array> {
   const page = pdfDoc.addPage();
   const { width, height } = page.getSize();
 
-  page.drawText(`Veri: ${JSON.stringify(data)}`, {
+page.drawText(`Ad: ${data.firstName}`, {
     x: 50,
     y: height - 50,
   });
+
+  page.drawText(`Soyad: ${data.lastName}`, {
+    x: 50,
+    y: height - 100,
+  });
+
 
   return pdfDoc.save();
 }
