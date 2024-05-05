@@ -1,4 +1,4 @@
-import { MyEntity } from '../entity/MyEntity';
+import { MyEntity } from '../entity/myEntity';
 import { PDFDocument } from 'pdf-lib';
 
 export async function generatePDF(data: MyEntity): Promise<Uint8Array> {
