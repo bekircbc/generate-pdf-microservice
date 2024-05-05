@@ -37,7 +37,7 @@ const app = express();
 server.applyMiddleware({ app });
 
 // Sunucuyu başlatma
-const PORT = process.env.PORT || 3000;
+const PORT = process?.env.PORT || 3251;
 app.listen(PORT, () => {
   console.log(`Server listening at http://localhost:${PORT}`);
 });
