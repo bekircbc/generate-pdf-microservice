@@ -4,7 +4,7 @@
   "description": "PDF generator microservice with Node.js, TypeScript, and PostgreSQL",
   "main": "dist/index.js",
   "scripts": {
-    "start": "node dist/index.js",
+    "start": "ts-node src/index.ts",
     "build": "tsc && mkdir -p dist && cp -r src/* dist/",
     "test": "jest --passWithNoTests"
   },
