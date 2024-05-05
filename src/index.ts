@@ -1,6 +1,6 @@
 import express from 'express';
 import { createConnection } from 'typeorm';
-import { MyEntity } from './entity/MyEntity';
+import { MyEntity } from '../entity/MyEntity';
 import { generatePDF } from './pdfGenerator';
 import path from 'path';
 
