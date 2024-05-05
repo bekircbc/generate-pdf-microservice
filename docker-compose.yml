@@ -23,5 +23,5 @@ services:
   graphql:
     image: my-graphql-app
     ports:
-      - '3000:3000'
+      - '3251:3251'
     restart: always
