@@ -14,17 +14,14 @@ createConnection()
       const id = req.params.id;
 
       try {
-        // Veritabanından veriyi al
         const data = await connection.getRepository(MyEntity).findOne(id);
 
         if (!data) {
           return res.status(404).send('Veri bulunamadı.');
         }
 
-        // PDF oluştur
         const pdfBuffer = await generatePDF(data);
 
-        // PDF'yi kaydet
         const filePath = `/app/PDF/${id}.pdf`;
         require('fs').writeFileSync(filePath, pdfBuffer);
 
@@ -35,7 +32,6 @@ createConnection()
       }
     });
 
-    // Server'ı başlat
     app.listen(32465, () => {
       console.log('Server çalışıyor. Port: 32465');
     });
