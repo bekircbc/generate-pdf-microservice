@@ -32,6 +32,8 @@
   },
   "devDependencies": {
     "@types/node": "^16.11.7",
+    "@types/express": "^4.17.21",
+    "@types/graphql": "^4.15.0",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.5",
     "jest":"^29.7.0"
