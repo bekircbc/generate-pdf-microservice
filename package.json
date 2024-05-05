@@ -6,7 +6,7 @@
   "scripts": {
     "start": "ts-node src/index.ts",
     "build": "tsc && mkdir -p dist && cp -r src/* dist/",
-    "test": "jest"
+    "test": "jest --passWithNoTests"
   },
   "keywords": [
     "pdf",
