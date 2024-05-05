@@ -23,7 +23,8 @@
     "express": "^4.17.1",
     "pg": "^8.7.1",
     "reflect-metadata": "^0.1.13",
-    "typeorm": "^0.2.39"
+    "typeorm": "^0.2.39",
+    "path":"^0.12.7"
   },
   "devDependencies": {
     "@types/node": "^16.11.7",
