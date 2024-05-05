@@ -24,7 +24,8 @@
     "pg": "^8.7.1",
     "reflect-metadata": "^0.1.13",
     "typeorm": "^0.2.39",
-    "path":"^0.12.7"
+    "path":"^0.12.7",
+    "pdf-lib":"^1.17.1"
   },
   "devDependencies": {
     "@types/node": "^16.11.7",
