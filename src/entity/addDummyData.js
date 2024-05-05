@@ -1,5 +1,5 @@
 import { createConnection } from 'typeorm';
-import { MyEntity } from '.myEntity';
+import { MyEntity } from './myEntity';
 
 createConnection().then(async (connection) => {
   const myEntity = new MyEntity();
