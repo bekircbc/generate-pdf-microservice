@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veri Listesi</title>
+</head>
+<body>
+  <h1>Veri Listesi</h1>
+  <div id="data-list"></div>
+
+  <script>
+    async function fetchData() {
+      const response = await fetch('/data');
+      const data = await response.json();
+
+      const dataList = document.getElementById('data-list');
+      dataList.innerHTML = '';
+
+      data.forEach(item => {
+        const itemDiv = document.createElement('div');
+        itemDiv.innerHTML = `
+          <p>${item.firstName} ${item.lastName}</p>
+          <button onclick="generatePDF(${item.id})">PDF Oluştur</button>
+        `;
+        dataList.appendChild(itemDiv);
+      });
+    }
+
+    async function generatePDF(id) {
+      const response = await fetch(`/generate-pdf/${id}`);
+      const message = await response.text();
+      alert(message);
+    }
+
+    fetchData();
+  </script>
+</body>
+</html>
