@@ -1,31 +1,32 @@
 {
   "name": "generate-pdf-microservice",
   "version": "1.0.0",
-  "description": "",
-  "type": "module",
-  "main": "src/index.ts",
+  "description": "PDF generator microservice with Node.js, TypeScript, and PostgreSQL",
+  "main": "dist/index.js",
   "scripts": {
-    "dev": "nodemon",
+    "start": "node dist/index.js",
     "build": "tsc",
-    "postinstall": "npm run build",
-    "start": "node build/index.ts"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "pdf",
+    "generator",
+    "microservice",
+    "nodejs",
+    "typescript",
+    "postgresql"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
   "dependencies": {
-    "cors": "^2.8.5",
-    "typeorm": "^0.3.20",
-    "express": "^4.19.2",
-    "express-session": "^1.17.3",
-    "ts-node": "^10.9.1",
-    "typescript": "^4.7.4",
-    "pdf-lib":"^1.17.1"
+    "@types/express": "^4.17.12",
+    "express": "^4.17.1",
+    "pg": "^8.7.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.39"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.12",
-    "@types/express": "^4.17.13",
-    "@types/express-session": "^1.17.5",
-    "nodemon": "^2.0.19"
+    "@types/node": "^16.11.7",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
   }
-}
