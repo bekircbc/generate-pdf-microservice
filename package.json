@@ -6,7 +6,7 @@
   "scripts": {
     "start": "ts-node src/index.ts",
     "build": "tsc && mkdir -p dist && cp -r src/* dist/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [
     "pdf",
@@ -30,6 +30,7 @@
   "devDependencies": {
     "@types/node": "^16.11.7",
     "ts-node": "^10.4.0",
-    "typescript": "^4.5.5"
+    "typescript": "^4.5.5",
+    "jest":"^29.7.0"
   }
 }
